@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>RGB Picker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-preview"></div>
+      <div class="slider">
+        <label for="red">Red:</label>
+        <input type="range" id="red" min="0" max="255" value="0" />
+        <label for="green">Green:</label>
+        <input type="range" id="green" min="0" max="255" value="0" />
+        <label for="blue">Blue:</label>
+        <input type="range" id="blue" min="0" max="255" value="0" />
+      </div>
+      <div class="color-code">
+        <span>RGB : <span id="rgbCode">rgb(0, 0, 0)</span></span>
+        <button id="copyButton">Copy</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
